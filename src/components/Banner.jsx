@@ -2,7 +2,7 @@ import React from "react";
 
 function Banner() {
   return (
-    <banner className="banner">
+    <div className="banner">
       <img
         src={"/images/photoGrid.png"}
         alt="banner"
@@ -14,7 +14,7 @@ function Banner() {
         Join unique interactive activities led by one-of-a-kind hosts—all
         without leaving home.
       </p>
-    </banner>
+    </div>
   );
 }
 

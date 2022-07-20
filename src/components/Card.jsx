@@ -2,7 +2,7 @@ import React from "react";
 
 function Card(props) {
   return (
-    <card className="card">
+    <div className="card">
       <img
         src={`../images/${props.coverImg}`}
         alt="katieZaferes"
@@ -19,7 +19,7 @@ function Card(props) {
           <span>From ${props.price}</span> / person
         </p>
       </div>
-    </card>
+    </div>
   );
 }
 

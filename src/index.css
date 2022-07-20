@@ -41,6 +41,8 @@ body {
 
 .card {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .card--content {
   padding-left: 20px;
@@ -56,4 +58,10 @@ body {
 
 span {
   font-weight: bold;
+}
+.card--list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }

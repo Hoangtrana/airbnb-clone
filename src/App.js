@@ -10,17 +10,20 @@ function App() {
         <Navbar />
 
         <Banner />
-        {data.map((person) => {
-          return (
-            <Card
-              coverImg={person.coverImg}
-              rating={person.stats.rating}
-              reviewCount={person.stats.reviewCount}
-              location={person.location}
-              price={person.price}
-            />
-          );
-        })}
+        <div className="card--list">
+          {data.map((person) => {
+            return (
+              <Card
+                coverImg={person.coverImg}
+                rating={person.stats.rating}
+                reviewCount={person.stats.reviewCount}
+                location={person.location}
+                title={person.title}
+                price={person.price}
+              />
+            );
+          })}
+        </div>
       </header>
     </div>
   );
