@@ -1,8 +1,15 @@
 import React from "react";
 
 function Card(props) {
+  let soldOut;
+  if (props.openSpots === 0) {
+    soldOut = "SOLD OUT";
+  } else if (props.location === "Online") {
+    soldOut = "ONLINE";
+  }
   return (
     <div className="card">
+      {soldOut && <div className="card--badge">{soldOut}</div>}
       <img
         src={`../images/${props.coverImg}`}
         alt="katieZaferes"

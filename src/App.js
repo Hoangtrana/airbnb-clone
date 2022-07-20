@@ -21,6 +21,7 @@ function App() {
                 location={person.location}
                 title={person.title}
                 price={person.price}
+                openSpots={person.openSpots}
               />
             );
           })}
