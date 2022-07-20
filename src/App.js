@@ -12,18 +12,7 @@ function App() {
         <Banner />
         <div className="card--list">
           {data.map((person) => {
-            return (
-              <Card
-                key={person.id}
-                coverImg={person.coverImg}
-                rating={person.stats.rating}
-                reviewCount={person.stats.reviewCount}
-                location={person.location}
-                title={person.title}
-                price={person.price}
-                openSpots={person.openSpots}
-              />
-            );
+            return <Card key={person.id} person={person} />;
           })}
         </div>
       </header>

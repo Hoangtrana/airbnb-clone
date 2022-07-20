@@ -2,28 +2,29 @@ import React from "react";
 
 function Card(props) {
   let soldOut;
-  if (props.openSpots === 0) {
+  if (props.person.openSpots === 0) {
     soldOut = "SOLD OUT";
-  } else if (props.location === "Online") {
+  } else if (props.person.location === "Online") {
     soldOut = "ONLINE";
   }
   return (
     <div className="card">
       {soldOut && <div className="card--badge">{soldOut}</div>}
       <img
-        src={`../images/${props.coverImg}`}
+        src={`../images/${props.person.coverImg}`}
         alt="katieZaferes"
         className="card--photo"
       />
       <div className="card--content">
         <p>
           <img src={"/images/star.png"} alt="star" className="card--star" />
-          {props.rating}({props.reviewCount}).{props.location}
+          {props.person.stats.rating}({props.person.stats.reviewCount}).
+          {props.person.location}
         </p>
 
-        <p>{props.title}</p>
+        <p>{props.person.title}</p>
         <p>
-          <span>From ${props.price}</span> / person
+          <span>From ${props.person.price}</span> / person
         </p>
       </div>
     </div>

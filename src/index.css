@@ -46,6 +46,7 @@ body {
   display: flex; /* ADD */
   flex-direction: column; /* ADD */
   position: relative;
+  margin-left: 20px;
 }
 .card--content {
   padding-left: 20px;
