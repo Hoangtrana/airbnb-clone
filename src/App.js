@@ -14,6 +14,7 @@ function App() {
           {data.map((person) => {
             return (
               <Card
+                key={person.id}
                 coverImg={person.coverImg}
                 rating={person.stats.rating}
                 reviewCount={person.stats.reviewCount}
