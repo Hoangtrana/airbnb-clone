@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }
@@ -10,7 +13,47 @@ body {
 }
 
 .navbar--logo {
-  max-width: 1000px;
+  max-width: 100px;
   width: 80x;
   height: 25px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.banner-photo {
+  align-self: center;
+  max-width: 400px;
+}
+
+.banner--header {
+  margin-bottom: 16px;
+}
+.banner--text {
+  width: 280px;
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+.card {
+  padding: 20px;
+}
+.card--content {
+  padding-left: 20px;
+}
+.card--photo {
+  border-radius: 9px;
+  max-width: 176px;
+}
+.card--star {
+  width: 14px;
+  height: 14px;
+}
+
+span {
+  font-weight: bold;
 }
